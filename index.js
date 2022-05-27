@@ -1,90 +1,83 @@
 // TODO: Buatlah data dari kedua user di sini
+const favColorMonica = ["Yellow", "Pink", "White", "Purple"];
+const favColorWendy = ["Blue", "Black", "Grey"];
+
+const eduMonica1 = {
+    name: "SD 01",
+    city: "Jakarta",
+    graduate:2016
+}
+const eduMonica2 = {
+    name: "SMP 02",
+    city: "Jakarta",
+    graduate:2019
+}
+const eduMonica3 = {
+    name: "SMA 03",
+    city: "Tangerang",
+}
+
+// Wendy
+const eduWendy1 = {
+    name: "SD 02",
+    city: "Jakarta",
+    graduate:2010
+}
+const eduWendy2 = {
+    name: "SMP 03",
+    city: "Bogor",
+    graduate:2013
+}
+const eduWendy3 = {
+    name: "SMA 01",
+    city: "Surabaya",
+    graduate:2016
+}
+const eduWendy4 = {
+    name: "Universitas Maju",
+    city: "Tangerang"
+}
+
+const favRestaurantMonica = ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"]
+const favRestaurantWendy = ["Tempura", "Bento", "Sushi", "Pancake", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"]
+
 
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
+
+// education
+const eduMonica = [eduMonica1,eduMonica2,eduMonica3]
+const eduWendy = [eduWendy1,eduWendy2,eduWendy3,eduWendy4]
+
+// favorite color
+const favColMonica = new Set(favColorMonica)
+const favColWendy = new Set(favColorWendy)
+
+// favorite restaurant
+const favRestMonica = new Set(favRestaurantMonica)
+const favRestWendy = new Set(favRestaurantWendy)
+
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 const firstUser = {
     name : "Monica",
     gender : "Female",
     age : 17,
     email : "monica@dingdong.com",
-    isHavePet : true
+    favoriteColor : favColMonica,
+    isHavePet : true,
+    education : eduMonica,
+    favoriteRestaurant : favRestMonica
 };
-
-firstUser.favoriteColor = new Set(["Yellow", "Pink", "White", "Purple"]);
-
-firstUser.education = new Object();
-firstUser.education.SD = new Map();
-firstUser.education.SD.set("name", "SD 01");
-firstUser.education.SD.set("city", "Jakarta");
-firstUser.education.SD.set("graduate", 2016);
-
-firstUser.education.SMP = new Map();
-firstUser.education.SMP.set("name", "SMP 02");
-firstUser.education.SMP.set("city", "Jakarta");
-firstUser.education.SMP.set("graduate", 2019);
-
-firstUser.education.SMA = new Map();
-firstUser.education.SMA.set("name", "SMA 03");
-firstUser.education.SMA.set("city", "Tangerang");
-firstUser.education.SMA.set("graduate", "not yet");
-
-firstUser.favoriteRestaurant = new Set();
-firstUser.favoriteRestaurant.add("Bento");
-firstUser.favoriteRestaurant.add("Sushi");
-firstUser.favoriteRestaurant.add("Pancake");
-firstUser.favoriteRestaurant.add("Eggy");
-firstUser.favoriteRestaurant.add("Tempura");
-firstUser.favoriteRestaurant.add("Bento");
-firstUser.favoriteRestaurant.add("Eggy");
-firstUser.favoriteRestaurant.add("Padang");
-firstUser.favoriteRestaurant.add("Tteok");
-firstUser.favoriteRestaurant.add("Sushi");
-firstUser.favoriteRestaurant.add("Sushi");
-
 
 const secondUser = {
     name: "Wendy",
     gender: "Male",
     age: 23,
     email: "wendy@dingdong.com",
-    isHavePet: false
+    favoriteColor: favColWendy,
+    isHavePet: false,
+    education: eduWendy,
+    favoriteRestaurant: favRestWendy
 };
-
-secondUser.favoriteColor = new Set(["Blue", "Black", "Grey"]);
-
-secondUser.education = new Object();
-secondUser.education.SD = new Map();
-secondUser.education.SD.set("name", "SD 02");
-secondUser.education.SD.set("city", "Jakarta");
-secondUser.education.SD.set("graduate", 2010);
-
-secondUser.education.SMP = new Map();
-secondUser.education.SMP.set("name", "SMP 03");
-secondUser.education.SMP.set("city", "Bogor");
-secondUser.education.SMP.set("graduate", 2013);
-
-secondUser.education.SMA = new Map();
-secondUser.education.SMA.set("name", "SMA 01");
-secondUser.education.SMA.set("city", "Surabaya");
-secondUser.education.SMA.set("graduate", 2016);
-
-secondUser.education.Universitas = new Map()
-secondUser.education.Universitas.set("name", "Universitas Maju")
-secondUser.education.Universitas.set("city", "Tangerang")
-secondUser.education.Universitas.set("graduate","not yet")
-
-
-secondUser.favoriteRestaurant = new Set()
-secondUser.favoriteRestaurant.add("Tempura")
-secondUser.favoriteRestaurant.add("Bento")
-secondUser.favoriteRestaurant.add("Sushi")
-secondUser.favoriteRestaurant.add("Pancake")
-secondUser.favoriteRestaurant.add("Padang")
-secondUser.favoriteRestaurant.add("Katsu")
-secondUser.favoriteRestaurant.add("Geprek")
-secondUser.favoriteRestaurant.add("Pancake")
-secondUser.favoriteRestaurant.add("Eggy")
-
 
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
