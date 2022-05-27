@@ -49,12 +49,12 @@ const eduMonica = [eduMonica1,eduMonica2,eduMonica3]
 const eduWendy = [eduWendy1,eduWendy2,eduWendy3,eduWendy4]
 
 // favorite color
-const favColMonica = new Set(favColorMonica)
-const favColWendy = new Set(favColorWendy)
+const favColMonica = [new Set(...favColorMonica)]
+const favColWendy = [new Set(...favColorWendy)]
 
 // favorite restaurant
-const favRestMonica = new Set(favRestaurantMonica)
-const favRestWendy = new Set(favRestaurantWendy)
+const favRestMonica = [new Set(...favRestaurantMonica)]
+const favRestWendy = [new Set(...favRestaurantWendy)]
 
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 const firstUser = {
